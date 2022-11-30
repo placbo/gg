@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>GG</title>
   </head>
   <body>
-    <div class="tenor-gif-embed" data-postid="9000492" data-share-method="host"
-      data-aspect-ratio="1.98413" data-width="100%">
-      <a href="https://tenor.com/view/bananas-gif-9000492">Bananas GIF</a>from
-      <a href="https://tenor.com/search/bananas-gifs">Bananas GIFs</a>
+
+    <div id="main" style="display: none">
+      <div class="tenor-gif-embed" data-postid="9000492"
+        data-share-method="host"
+        data-aspect-ratio="1.98413" data-width="100%">
+        <a href="https://tenor.com/view/bananas-gif-9000492">Bananas GIF</a>from
+        <a href="https://tenor.com/search/bananas-gifs">Bananas GIFs</a>
+      </div>
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <div id="login" class="main">
+      <form class="form" onSubmit="login()">
+        <div class="input-container">
+          <label class="label">Username: </label>
+          <input
+            type="text"
+            name="username"
+            class="input"
+            placeholder="Username"
+            />
+        </div>
+        <div class="input-container">
+          <label class="label">Password: </label>
+          <input
+            type="password"
+            name="password"
+            class="input"
+            placeholder="Password"
+            />
+        </div>
+        <button type="submit" id="login-btn">Login</button>
+      </form>
+    </div>
+
+    <script>
+      const login = () => {
+        event.preventDefault();
+        const pwd = document.getElementsByName("password")[0].value
+        console.log("password is " + pwd );
+        if (pwd==="start"){
+          document.getElementById("main").style.display = "block"
+          document.getElementById("login").style.display = "none"
+        }
+      };
+    </script>
   </body>
 </html>
