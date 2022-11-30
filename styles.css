@@ -3,6 +3,16 @@ body {
   padding: 0;
 }
 
+
+#mainContent {
+  height: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   height: 500px;
   min-height: 100vh;
@@ -55,18 +65,17 @@ body {
 
 #login-btn {
   align-self: center;
-  padding: 0.5rem 1.5rem; 
+  padding: 0.5rem 1.5rem;
   margin-top: 2rem;
   border: none;
   color: #fff;
-  background-color: rgb(61, 84, 186);  
+  background-color: rgb(61, 84, 186);
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.2s ease-in;
 }
 
 #login-btn:hover {
-  background-color: rgb(27, 37, 84);  
+  background-color: rgb(27, 37, 84);
   box-shadow: none;
 }
-

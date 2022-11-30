@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <div id="main" style="display: none">
+    <div id="mainContent" style="display: none">
       <div class="tenor-gif-embed" data-postid="9000492"
         data-share-method="host"
         data-aspect-ratio="1.98413" data-width="100%">
@@ -52,7 +52,7 @@
         const pwd = document.getElementsByName("password")[0].value
         console.log("password is " + pwd );
         if (pwd==="start"){
-          document.getElementById("main").style.display = "block"
+          document.getElementById("mainContent").style.display = "flex"
           document.getElementById("login").style.display = "none"
         }
       };
