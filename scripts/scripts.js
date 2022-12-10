@@ -21,14 +21,19 @@ const login = () => {
   const pwd = document.getElementsByName("password")[0].value;
   console.log("password is " + pwd);
   if (pwd === "start") {
-    document.getElementById("mainContent").style.display = "flex";
-    document.getElementById("loginpage").style.display = "none";
+    window.location.href = "carousel.html";
+  } else {
+    const element = document.getElementById("forgotten-password");
+    element.style.display = "block";
+    element.textContent = "Forgot password?";
+    element.style.color = "#ba3d54";
   }
 };
 const showPasswordHint = () => {
   event.preventDefault();
-  document.getElementById("forgotten-password").textContent =
-    "Hint: Det vanlige!";
+  const element = document.getElementById("forgotten-password");
+  element.textContent = "Hint: Det vanlige!";
+  element.style.color = "rgb(61, 84, 186)";
   console.log("passwordfsdfsd");
 };
 
