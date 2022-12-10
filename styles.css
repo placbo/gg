@@ -94,7 +94,6 @@ ul {
   right: 1rem;
 }
 
-
 .top-menu{
   position: absolute;
   top:0;
@@ -131,10 +130,10 @@ ul {
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
-
 }
 
 #floating-menu>.close{
+  font-size: 1.5rem;
   display: block;
   position: absolute;
   right:0;
@@ -149,16 +148,14 @@ ul {
   color: rgba(255, 255, 255, 1);
 }
 
-#floating-menu > .menu-items{
-  margin-top: 2rem;
+#floating-menu>.menu-items{
+  margin-top: 3rem;
   font-size: 2rem;
 }
 
-#floating-menu > .menu-items>li{
+#floating-menu>.menu-items>li{
   padding: 0.5rem;
 }
-
-
 
 .loginpage {
   height: 500px;
