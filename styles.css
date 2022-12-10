@@ -1,19 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #282a36;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 300ms opacity ease-in-out;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+.carousel-button.next {
+  right: 1rem;
 }
 
 
-#mainContent {
-  height: 500px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.top-menu{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 5;
 }
 
-.main {
+#burger{
+  background: none;
+  border: none;
+  display: block;
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding:  0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#burger:hover,
+#burger:focus {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#burger:focus {
+  outline: 1px solid black;
+}
+
+#floating-menu{
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+
+}
+
+#floating-menu>.close{
+  display: block;
+  position: absolute;
+  right:0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding:  0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#floating-menu>.close:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+#floating-menu > .menu-items{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+#floating-menu > .menu-items>li{
+  padding: 0.5rem;
+}
+
+
+
+.loginpage {
   height: 500px;
   min-height: 100vh;
   background-image: url("media/background.jpg");
