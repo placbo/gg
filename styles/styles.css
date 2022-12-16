@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -31,7 +29,6 @@ ul {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes fadeInAnimation {
   0% {
@@ -160,7 +157,7 @@ ul {
 .loginpage {
   height: 500px;
   min-height: 100vh;
-  background-image: url("media/background.jpg");
+  background-image: url("/media/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
