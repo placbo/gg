@@ -43,10 +43,10 @@ function checkAnswer(choice) {
     document.getElementById("q-image").style.display = "none";
 
     document.getElementById("q" + choice).style.backgroundColor = "green";
-    document.getElementById("q" + choice).textContent = "V";
+    document.getElementById("q" + choice).textContent = "✔️";
   } else {
     document.getElementById("q" + choice).style.backgroundColor = "red";
-    document.getElementById("q" + choice).textContent = "X";
+    document.getElementById("q" + choice).textContent = "❌";
   }
 }
 
