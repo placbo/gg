@@ -25,8 +25,7 @@ let currentQuestion = 0;
 function populatePage() {
   document.getElementById("question").textContent =
     data[currentQuestion].question;
-  document.getElementById("q-image").src =
-    "../media/" + data[currentQuestion].img;
+  document.getElementById("q-image").src = "media/" + data[currentQuestion].img;
   document.getElementById("q1").textContent = data[currentQuestion].q1;
   document.getElementById("q2").textContent = data[currentQuestion].q2;
   document.getElementById("q3").textContent = data[currentQuestion].q3;
