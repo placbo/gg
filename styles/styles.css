@@ -11,7 +11,7 @@ body {
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
@@ -32,11 +32,11 @@ ul {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 .slide {
@@ -91,21 +91,21 @@ ul {
   right: 1rem;
 }
 
-.top-menu{
+.top-menu {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   z-index: 5;
 }
 
-#burger{
+#burger {
   background: none;
   border: none;
   display: block;
   font-size: 3rem;
   cursor: pointer;
   border-radius: 0.25rem;
-  padding:  0.5rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.7);
 }
@@ -120,44 +120,44 @@ ul {
   outline: 1px solid black;
 }
 
-#floating-menu{
+#floating-menu {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
 }
 
-#floating-menu>.close{
+#floating-menu > .close {
   font-size: 1.5rem;
   display: block;
   position: absolute;
-  right:0;
+  right: 0;
   cursor: pointer;
   border-radius: 0.25rem;
-  padding:  0.5rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.5);
 }
 
-#floating-menu>.close:hover{
+#floating-menu > .close:hover {
   color: rgba(255, 255, 255, 1);
 }
 
-#floating-menu>.menu-items{
+#floating-menu > .menu-items {
   margin-top: 3rem;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
-#floating-menu>.menu-items>li{
+#floating-menu > .menu-items > li {
   padding: 0.5rem;
 }
 
 .loginpage {
   height: 500px;
   min-height: 100vh;
-  background-image: url("/media/background.jpg");
+  background-image: url("../media/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

@@ -1,7 +1,8 @@
+// @ts-nocheck
 const data = [
   {
     question: "Hvem er dette?",
-    img: "/media/q1.jpg",
+    img: "q1.jpg",
     q1: "Olav",
     q2: "Olaf",
     q3: "Husker ikke",
@@ -10,7 +11,7 @@ const data = [
   },
   {
     question: "Hva heter denne fargen?",
-    img: "/media/q2.jpg",
+    img: "q2.jpg",
     q1: "Gül",
     q2: "Gyl",
     q3: "Gul",
@@ -24,7 +25,8 @@ let currentQuestion = 0;
 function populatePage() {
   document.getElementById("question").textContent =
     data[currentQuestion].question;
-  document.getElementById("q-image").src = data[currentQuestion].img;
+  document.getElementById("q-image").src =
+    "../media/" + data[currentQuestion].img;
   document.getElementById("q1").textContent = data[currentQuestion].q1;
   document.getElementById("q2").textContent = data[currentQuestion].q2;
   document.getElementById("q3").textContent = data[currentQuestion].q3;
