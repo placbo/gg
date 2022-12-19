@@ -57,7 +57,7 @@ function goToNextQuestion() {
   currentQuestion++;
   console.log(currentQuestion);
   if (currentQuestion >= data.length) {
-    window.location.href = "carousel.html";
+    window.location.href = "quiz_end.html";
   }
   populatePage();
 }

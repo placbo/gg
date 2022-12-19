@@ -22,6 +22,17 @@ body {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+.end_logo {
+  font-size: 5vw;
+  text-shadow: 0 0 10px #000000;
+  font-weight: 900;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
 .logo:hover {
   color: #cccccc;
