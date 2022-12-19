@@ -22,7 +22,8 @@ ul {
 
 .carousel {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -159,16 +160,19 @@ ul {
 }
 
 .loginpage {
-  height: 500px;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   min-height: 100%;
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
+
   position: relative;
   background-image: url("../media/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
