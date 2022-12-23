@@ -28,6 +28,15 @@ const data = [
     correct: 3,
   },
   {
+    question: "Hvordan blir man stor og sterk?",
+    img: "q5.jpg",
+    q1: "Pushe",
+    q2: "Pulle",
+    q3: "Orker ikke trene",
+    q4: "Pushe OG pulle",
+    correct: 4,
+  },
+  {
     question: "Hva må en ekte normann ha?",
     img: "q4.jpg",
     q1: "Drill",
