@@ -18,6 +18,24 @@ const data = [
     q4: "Gøl",
     correct: 3,
   },
+  {
+    question: "Når har denne kjekkasen bursdag?",
+    img: "q3.jpg",
+    q1: "6. jan",
+    q2: "17. mai",
+    q3: "7. jan",
+    q4: "8. jan",
+    correct: 3,
+  },
+  {
+    question: "Hva må en ekte normann ha?",
+    img: "q4.jpg",
+    q1: "Drill",
+    q2: "Hytte",
+    q3: "Ski",
+    q4: "Alt sammen, så klart",
+    correct: 4,
+  },
 ];
 
 let currentQuestion = 0;
