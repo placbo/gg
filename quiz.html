@@ -10,29 +10,27 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
       rel="stylesheet"
-      />
+    />
     <script src="scripts/quiz.js" defer></script>
     <title>GG-Quiz</title>
   </head>
   <body>
-    <section aria-label="quiz">
-      <div class="quiz-wrapper">
-        <div class="top-wrapper">
-          <div class="question" id="question"></div>
-          <div class="img-wrapper">
-            <button id="nextPageButton" onclick="goToNextQuestion()">
-              Gå til neste spørsmål >
-            </button>
-            <img id="q-image" src="" alt="bilde, sjø" />
-          </div>
-        </div>
-        <div class="choice-wrapper">
-          <div class="choice" id="q1" onclick="checkAnswer(1)"></div>
-          <div class="choice" id="q2" onclick="checkAnswer(2)"></div>
-          <div class="choice" id="q3" onclick="checkAnswer(3)"></div>
-          <div class="choice" id="q4" onclick="checkAnswer(4)"></div>
+    <div class="quiz-wrapper fullheight">
+      <div class="top-wrapper">
+        <div class="question" id="question"></div>
+        <div class="img-wrapper">
+          <button id="nextPageButton" onclick="goToNextQuestion()">
+            Gå til neste spørsmål >
+          </button>
+          <img id="q-image" src="" alt="bilde, sjø" />
         </div>
       </div>
-    </section>
+      <div class="choice-wrapper">
+        <div class="choice" id="q1" onclick="checkAnswer(1)"></div>
+        <div class="choice" id="q2" onclick="checkAnswer(2)"></div>
+        <div class="choice" id="q3" onclick="checkAnswer(3)"></div>
+        <div class="choice" id="q4" onclick="checkAnswer(4)"></div>
+      </div>
+    </div>
   </body>
 </html>
